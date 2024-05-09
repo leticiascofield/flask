@@ -33,7 +33,7 @@ def _default_template_ctx_processor() -> dict[str, t.Any]:
     if reqctx is not None:
         rv["request"] = reqctx.request
         rv["session"] = reqctx.session
-    return rv
+    return None
 
 
 class Environment(BaseEnvironment):
